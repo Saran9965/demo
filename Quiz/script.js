@@ -1,10 +1,10 @@
 const quizData = [
+    { question: "Which planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter", "Venus"], answer: "Mars" },
+    { question: "What is 5 + 3?", options: ["5", "8", "10", "15"], answer: "8" },
     { question: "Which of the following statements about Python is true?",options:['case-sentive','not suppot oops','cannot handle large dataset','compiled language'],answer:'case-sentive'},
     { question: "What is the correct extension for Python files?",options:['.py','.python','.pt','.pyt'],answer:'.py'},
     { question: "Which keyword is used to exit a loop in Python?",options:['stop','exit','break','return'],answer:'break'},
     { question: "What is the capital of France?", options: ["Paris", "London", "Berlin", "Madrid"], answer: "Paris" },
-    { question: "Which planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter", "Venus"], answer: "Mars" },
-    { question: "What is 5 + 3?", options: ["5", "8", "10", "15"], answer: "8" },
 ];
 
 let currentQuestionIndex = 0;
@@ -45,11 +45,7 @@ function checkAnswer(selectedOption) {
 
 function showResult() {
     questionElement.style.display = "none";
-    optionsElement.style.display = "none";
-  
+    optionsElement.style.display = "none"; 
     resultElement.textContent = `You scored ${score} out of ${quizData.length}`;
 }
 loadQuestion();
-
-
-

@@ -1,4 +1,4 @@
- body {
+body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #f06, #4a90e2);
     display: flex;
@@ -66,4 +66,8 @@ h1 {
     transform: scale(1.05);
 }
 
-
+.res{
+    font-weight:bold;
+    font-size: 30px;
+    text-shadow:3px black;
+}
