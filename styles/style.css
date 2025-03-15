@@ -1,0 +1,23 @@
+.password {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+input[type="password"], input[type="text"] {
+    width: 230px;
+    height: 30px;
+    font-size: 20px;
+    padding: 7px 20px;
+    border: 1.2px solid #1272A0;
+    border-radius: 5px;
+    outline: none;
+    letter-spacing: 2px;
+    box-shadow: inset 8px 8px 16px #808e9b, inset -8px -8px 16px #d2dae2;
+}
+.password img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
