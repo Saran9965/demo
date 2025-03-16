@@ -2,17 +2,19 @@
     position: relative;
     display: flex;
     align-items: center;
+    max-width: 80%;
+    right: 100%;
 }
-input[type="password"], input[type="text"] {
-    width: 230px;
-    height: 30px;
-    font-size: 20px;
-    padding: 7px 20px;
-    border: 1.2px solid #1272A0;
+.password input {
+    width: 100%;
+    padding-right: 40px;
+    font-size: 18px;
+    border: 1.5px solid #1272A0;
     border-radius: 5px;
     outline: none;
-    letter-spacing: 2px;
-    box-shadow: inset 8px 8px 16px #808e9b, inset -8px -8px 16px #d2dae2;
+    letter-spacing: 1.5px;
+    box-shadow: inset 4px 4px 8px #808e9b, inset -4px -4px 8px #d2dae2;
+    padding: 10px;
 }
 .password img {
     width: 25px;
@@ -20,4 +22,26 @@ input[type="password"], input[type="text"] {
     position: absolute;
     right: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .password input {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .password img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .password input {
+        font-size: 14px;
+        padding: 6px;
+    }
+    .password img {
+        width: 20px;
+        height: 20px;
+    }
 }
