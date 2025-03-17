@@ -1,6 +1,8 @@
 import React from "react";
 import "./login.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { auth } from "./firebase";
  
 function Signup() {
     const [name, setname] = useState('');
@@ -8,10 +10,20 @@ function Signup() {
     const [pwd, setpwd] = useState('');
     const [age, setage] = useState('');
     const [contact, setcontact] = useState('');
-    
-    function handleSubmit(e) {
-      e.preventDefault();
-      console.log({ name,email, pwd,age,contact});
+    const Navigate = useNavigate();
+
+    const handleSubmit=async(e)=>{
+        e.preventDefault();
+        try{
+            await auth.createUserWithEmailAndPassword(email,pwd);
+            console.log(email+''+pwd);
+            alert('email id registered done...Ready to login!')
+            Navigate('/login');
+        }
+        catch(error){
+            console.log(error);
+            alert(error);
+        }
     }
 
     return (
@@ -47,7 +59,6 @@ function Signup() {
                     placeholder="Enter your contact number" required />
 
                     <button type="submit" className="submit-btn">Submit</button>
-
                     <p>
                         Already have an account? <a href="/login">Login</a>
                     </p>
