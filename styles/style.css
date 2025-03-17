@@ -48,7 +48,7 @@
 
 
 
-                               /* LOGOUT */
+/* LOGOUT */
 
 
 /* body {
@@ -124,9 +124,10 @@
 
 
 
-                 /* Submit */
+        /* Submit */
 
-.submit{
+
+.submit {
     background-color: #18181a;
     border: 1px solid black;
     height: 100px;
@@ -141,7 +142,7 @@
     position: absolute;
     overflow: hidden;
     border: 2px solid #4810e0;
-    color:white;
+    color: white;
     display: inline-block;
     font-size: 30px;
     font-weight: 500;
@@ -150,7 +151,7 @@
     width: 20%;
     text-decoration: none;
     cursor: pointer;
-    background:black; 
+    background: black;
     border-radius: 30px;
     user-select: none;
     -webkit-user-select: none;
@@ -192,17 +193,18 @@
 .btn-3:hover:after {
     transform-origin: bottom center;
     transform: skewY(9.3deg) scaleY(2);
-  }
+}
 .btn-3:hover span:last-child {
     transform: translateX(-50%) translateY(-50%);
     opacity: 1;
     transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
-  
 
-                /* Sign-up */
 
-.sign{
+        /* Sign-up */
+
+
+.sign {
     background-color: #18181a;
     border: 1px solid black;
     height: 100px;
@@ -223,7 +225,7 @@
     border: 1px solid blue;
     border-radius: 25px;
     white-space: nowrap;
-    background:none;
+    background: none;
     cursor: pointer;
 }
 .btn-4:before {
@@ -266,4 +268,239 @@
 }
 .btn-4:active {
     transform: scale(0.95);
+}
+
+
+        /* Share */
+
+
+.share {
+    background-color: #18181a;
+    border: 1px solid black;
+    height: 100px;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-5 {
+    scale: 0.5;
+    position: absolute;
+    overflow: hidden;
+    width: 170px;
+    height: 56px;
+    border-radius: 30px;
+    border: 0;
+    color: #f7f7f7;
+    background: #8f44fd;
+    font-family: "Euclid Circular A", "Poppins";
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn-5 i {
+    font-size: 18px;
+}
+.btn-5-text,
+.btn-5-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: 0.3s;
+}
+.btn-5-text {
+    gap: 10px;
+    justify-content: center;
+    color: inherit;
+    font-size: 18px;
+}
+.btn-5-links {
+    opacity: 0;
+    justify-content: space-between;
+    padding: 0 24px;
+    transition: 0.2s;
+}
+.btn-5-links a {
+    translate: 0 50px;
+    font-size: 24px;
+    transition: 0.3s;
+}
+.btn-5:hover {
+    border-radius: 10px;
+}
+.btn-5:hover .btn-5-links a:nth-child(1) {
+    transition-delay: 0.05s;
+}
+.btn-5:hover .btn-5-links a:nth-child(2) {
+    transition-delay: 0.1s;
+}
+.btn-5:hover .btn-5-links a:nth-child(3) {
+    transition-delay: 0.15s;
+}
+.btn-5:hover .btn-5-text {
+    translate: 0 -100%;
+}
+.btn-5:hover .btn-5-links {
+    opacity: 1;
+}
+.btn-5:hover .btn-5-links a {
+    translate: 0;
+}
+.btn-5-links i {
+    color: #f7f7f7;
+}
+
+
+        /* Signup-Slide */
+
+
+.signup {
+    background-color: #18181a;
+    border: 1px solid black;
+    height: 100px;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-1 {
+    scale: 0.5;
+    -webkit-tap-highlight-color: transparent;
+    appearance: button; 
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    mask-image: radial-gradient(circle, #000, #fff);
+    padding: 0;
+}
+.btn-1:disabled {
+    cursor: default;
+}
+.btn-1:-moz-focusring {
+    outline: auto;
+}
+.btn-1 svg {
+    vertical-align: middle;
+}
+.btn-1 [hidden] {
+    display: none;
+}
+.btn-1 {
+    border: 1px solid;
+    border-radius: 999px;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 950;
+    width: 200px;
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    position: relative;
+    text-transform: uppercase;
+}
+.btn-1 .original {
+    background: #fff;
+    color: #000;
+    display: grid;
+    inset: 0;
+    place-content: center;
+    position: absolute;
+    transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+}
+.btn-1:hover .original {
+    transform: translateY(100%);
+}
+.btn-1 .letters {
+    display: inline-flex;
+}
+.btn-1 span {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.3s;
+}
+.btn-1 span:nth-child(2n) {
+    transform: translateY(15px);
+}
+.btn-1:hover span {
+    opacity: 1;
+    transform: translateY(0);
+}
+.btn-1:hover span:nth-child(2) {
+    transition-delay: 0.1s;
+}
+.btn-1:hover span:nth-child(3) {
+    transition-delay: 0.2s;
+}
+.btn-1:hover span:nth-child(4) {
+    transition-delay: 0.3s;
+}
+.btn-1:hover span:nth-child(5) {
+    transition-delay: 0.4s;
+}
+.btn-1:hover span:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+
+        /* login-slide */
+
+.login {
+    background-color: #18181a;
+    border: 1px solid black;
+    height: 100px;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-2 {
+    scale: 0.5;
+    padding: 0 50px;
+    width: 180px;
+    height: 64px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-2:hover {
+    color: black;
+}
+.btn-2:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+.btn-2:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
