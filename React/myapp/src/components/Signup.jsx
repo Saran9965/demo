@@ -1,31 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "./login.css";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { auth } from "./firebase";
- 
+import { auth } from "./firebase";  //Authentication
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { getDatabase, ref, set, push } from "firebase/database"; //Database
+import app from "./firebase";
+
 function Signup() {
-    const [name, setname] = useState('');
-    const [email, setemail] = useState('');
-    const [pwd, setpwd] = useState('');
-    const [age, setage] = useState('');
-    const [contact, setcontact] = useState('');
-    const Navigate = useNavigate();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [pwd, setPwd] = useState('');
+    const [age, setAge] = useState('');
+    const [contact, setContact] = useState('');
+    const navigate = useNavigate();
 
-    const handleSubmit=async(e)=>{
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        try{
-            await auth.createUserWithEmailAndPassword(email,pwd);
-            console.log(email+''+pwd);
-            alert('email id registered done...Ready to login!')
-            Navigate('/login');
-        }
-        catch(error){
-            console.log(error);
-            alert(error);
-        }
-    }
+        try {
+            await createUserWithEmailAndPassword(auth, email, pwd); //Authentication
+            console.log(`User registered: ${email}`);
 
+            //Firebase Realtime Database Registration
+            const db = getDatabase(app);
+            const newDoc = push(ref(db, "Signup"));
+            await set(newDoc, {
+                NAME: name,
+                EMAIL: email,
+                PASSWORD: pwd,
+                AGE: age,
+                CONTACT: contact
+            });
+            alert("Signup successful! You can now log in.");
+            navigate("/login");
+        } catch (error) {
+            console.error("Signup Error:", error);
+            alert(error.message);
+        }
+    };
     return (
         <div className="container">
             <div className="header">
@@ -34,28 +45,28 @@ function Signup() {
             <form onSubmit={handleSubmit}>
                 <div className="forms">
                     <label htmlFor="name" className="label">Name</label>
-                    <input type="text" id="name"  value={name} 
-                    onChange={(e) => setname(e.target.value)}
+                    <input type="text" id="name" value={name} 
+                    onChange={(e) => setName(e.target.value)}
                     placeholder="Enter your name" required />
 
                     <label htmlFor="password" className="label">Password</label>
                     <input type="password" id="password" value={pwd} 
-                    onChange={(e) => setpwd(e.target.value)} 
+                    onChange={(e) => setPwd(e.target.value)} 
                     placeholder="Enter your password" required />
 
                     <label htmlFor="email" className="label">E-mail</label>
-                    <input type="email" id="email"  value={email} 
-                    onChange={(e) => setemail(e.target.value)} 
+                    <input type="email" id="email" value={email} 
+                    onChange={(e) => setEmail(e.target.value)} 
                     placeholder="Enter your email" required />
 
                     <label htmlFor="age" className="label">Age</label>
                     <input type="number" id="age" value={age} 
-                    onChange={(e) => setage(e.target.value)} 
+                    onChange={(e) => setAge(e.target.value)} 
                     placeholder="Enter your age" required />
 
                     <label htmlFor="contact" className="label">Contact</label>
                     <input type="tel" id="contact" value={contact} 
-                    onChange={(e) => setcontact(e.target.value)} 
+                    onChange={(e) => setContact(e.target.value)} 
                     placeholder="Enter your contact number" required />
 
                     <button type="submit" className="submit-btn">Submit</button>
