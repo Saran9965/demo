@@ -1,3 +1,13 @@
+Firebase-go to console (dbname=reactbackend) using Authentication and data stores in signup form Authentication use it can check e-mail and password are same in database
+
+<----- Set Up Firebase Project ----->
+ 1.Go to Firebase Console. 
+ 2.Click Create a Project → Enter project name (e.g., reactbackend). 
+ 3.Enable Authentication → Sign-in method → Enable Email/Password. 
+ 4.Set up Realtime Database.
+ 5.To create a db setup and click developer icon to setup and copy the npm code into react(firebase.js)
+ 6.Reference(Youtube Channels) : 1.soft.Tomatoes 2.NTH
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
