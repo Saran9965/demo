@@ -16,4 +16,11 @@ setCurrentDate(){
   const today=new Date();
   this.todaydate=today.toISOString().split('T')[0];
 }
+focusNext(nextElement: HTMLInputElement) {
+  if (nextElement) {
+    setTimeout(() => {
+      nextElement.focus();
+    }, 0);
+  }
+}
 }
