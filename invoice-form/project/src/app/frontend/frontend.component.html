@@ -1,178 +1,226 @@
-<!-- <div class="container mt-4">
-  <h3 class="text-primary">Invoice Booking</h3>
+<div class="container-fluid">
+  <div class="row gap-3 p-1">
+    <div class="col-md-4 bg-info rounded p-3">
+      <form>
+        <div class="row">
+          <label class="col-md-3">ID Type </label>
+          <input type="number" class="col-md-3 rounded">
+          <input type="number" class="col offset-md-1 rounded">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-4">Sender Name</label>
+          <input type="number" class="col-md-8 rounded">
+        </div>
+        <div class="row gap-1 mt-1">
+          <label class="col-md-3">Mobile1</label>
+          <input type="button" value="966" class="col-md-1 rounded">
+          <input type="number" class="col-md-2 rounded">
+          <label class="col-md-2">WhatsApp</label>
+          <input type="button" value="966" class="col-md-1 rounded">
+          <input type="number" class="col-md-2 rounded">
+        </div>
+        <div class="row">
+          <label class="col-md-3">Address</label>
+          <input type="number" class="col-md-5 rounded">
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4 bg-warning rounded">
+      <form>
+        <div class="row">
+          <label class="col-md-3">ID Type </label>
+          <input type="number" class="col-md-2 rounded">
+          <input type="number" class="col offset-md-1 rounded">
+        </div>
+        <div class="row">
+          <label class="col-md-4">Receiver Name</label>
+          <input type="number" class="col-md-6 rounded">
+        </div>
+        <div class="row">
+          <label class="col-md-3">Address</label>
+          <textarea class="col-md-5 rounded"></textarea>
+        </div>
+        <div class="row">
+          <label class="col-md-3">Mobile1</label>
+          <input type="button" value="+91" class="col-md-1 rounded">
+          <input type="number" class="col-md-2 rounded">
+          <label class="col-md-3">Mobile2</label>
+          <input type="button" value="+91" class="col-md-1 rounded">
+          <input type="number" class="col-md-2 rounded">
+        </div>
+        <div class="row">
+          <label class="col-md-3">Pincode</label>
+          <input type="number" class="col-md-3 rounded">
+          <label class="col-md-3">State</label>
+          <input type="number" class="col-md-3 rounded">
+        </div>
+        <div class="row">
+          <label class="col-md-3">District</label>
+          <input type="number" class="col-md-3 rounded">
+          <label class="col-md-3">Taluk</label>
 
-  <div class="row">
-    <div class="col-md-5 border p-3">
-      <h5 class="bg-danger text-white p-2">Sender Details</h5>
-      <label>ID Type</label>
-      <select class="form-select">
-        <option>Select ID</option>
-      </select>
-
-      <label class="mt-2">Sender Name</label>
-      <input type="text" class="form-control">
-
-      <label class="mt-2">Mobile</label>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="966">
-        <input type="text" class="form-control" placeholder="WhatsApp">
-      </div>
-
-      <label class="mt-2">Address</label>
-      <input type="text" class="form-control" value="ADMIN">
+          <input type="number" class="col-md-3 rounded">
+        </div>
+        <div class="row">
+          <label class="col-md-3">P.Office</label>
+          <input type="number" class="col-md-3 rounded">
+          <label class="col-md-3">E-mail</label>
+          <input type="number" class="col-md-3 rounded">
+        </div>
+      </form>
     </div>
 
-    <div class="col-md-5 border p-3">
-      <h5 class="bg-danger text-white p-2">Receiver Details</h5>
-      <label>ID Type</label>
-      <select class="form-select">
-        <option>Select ID</option>
-      </select>
-
-      <label class="mt-2">Receiver Name</label>
-      <input type="text" class="form-control">
-
-      <label class="mt-2">Mobile</label>
-      <input type="text" class="form-control">
-
-      <label class="mt-2">Address</label>
-      <input type="text" class="form-control">
-    </div>
-  </div>
-
-  <div class="row mt-3">
-    
-    <div class="col-md-4 border p-3">
-      <h5 class="bg-danger text-white p-2">Shipment Details</h5>
-      <label>Transit Type</label>
-      <input type="text" class="form-control" value="AIR">
-
-      <label class="mt-2">To Country</label>
-      <input type="text" class="form-control" value="INDIA">
-    </div>
-
-   
-    <div class="col-md-4 border p-3">
-      <h5 class="bg-danger text-white p-2">Carton Details</h5>
-      <label>Carton No</label>
-      <input type="text" class="form-control">
-
-      <label class="mt-2">Weight</label>
-      <input type="text" class="form-control">
-
-      <button class="btn btn-primary mt-2">Update</button>
-      <button class="btn btn-secondary mt-2">Cancel</button>
+    <div class="col-md-3 bg-info p-3 rounded">
+      <h6 class="col-md-6 bg-danger rounded text-center text-white">Shipment Details</h6>
+      <form>
+        <div class="row mt-1">
+          <label class="col-md-4">Bill No</label>
+          <input type="number" class="col-md-6 rounded">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-4">Agent</label>
+          <input type="number" class="col-md-6 rounded">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-4">Ref No</label>
+          <input type="number" class="col-md-6 rounded">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-4">Rate</label>
+          <input type="number" class="col-md-6 rounded text-center" value="0.00">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-4">Payment</label>
+          <input type="number" class="col-md-6 rounded text-center" value="CASH">
+        </div>
+        <div class="mt-2 offset-md-1">
+          <button class="btn btn-success">Save & Print</button>
+        </div>
+      </form>
     </div>
 
-  
-    <div class="col-md-4 border p-3">
-      <h5 class="bg-danger text-white p-2">Amount Details</h5>
-      <table class="table table-bordered">
-        <tr>
-          <td>Freight Charge</td>
-          <td>0.00</td>
-        </tr>
-        <tr>
-          <td>VAT</td>
-          <td>0.00</td>
-        </tr>
-        <tr class="table-danger">
-          <td>Total</td>
-          <td>0.00</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="mt-3">
-    <button class="btn btn-success">Save & Print</button>
-  </div>
-</div> -->
-
-<div class="container mx-0">
-  <div class="card">
-    <div class="card-header bg-danger text-white">Sender Details</div>
-    <div class="card-body">
-      <div class="row mb-1">
-        <label class="col-sm-1 col-form-label">ID Type</label>
-        <div class="col-sm-2">
-          <input type="number" class="form-control" />
-        </div>
-        <div class="col-sm-3">
-          <input type="text" class="form-control" value="" />
-          
-        </div>
-        <div class="col-sm-3">
-            <span class="col-sm-3-text bg-warning">🔍</span>
-        </div>
-      </div>
-
-      <div class="row mb-2">
-        <label class="col-sm-1 col-form-label">Sender Name</label>
-        <div class="col-sm-6">
-          <input type="text" class="form-control" />
-        </div>
-        <div class="col-sm-3">
-          <button class="btn btn-warning">
-            <i class="bi bi-search"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="row mb-3">
-        <label class="col-sm-1 col-form-label">Mobile</label>
-        <div class="col-sm-2">
-          <input type="text" class="form-control" value="966" />
-        </div>
-        <div class="col-sm-3">
-          <button class="btn btn-warning">
-            <i class="bi bi-search"></i>
-          </button>
-        </div>
-        <label class="col-sm-2 col-form-label">WhatsApp</label>
-        <div class="col-sm-3">
-          <input type="text" class="form-control" value="966" />
-        </div>
-      </div>
-
-      <div class="row mb-3">
-        <label class="col-sm-3 col-form-label">Address</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" value="ADMIN" readonly />
-        </div>
+    <div class="col-md-4 bg-info rounded p-3">
+      <div class="table-responsive col-md-12">
+        <table class="table-bordered text-center text-white">
+          <thead>
+            <tr>
+              <th class="col-md-1 bg-secondary text-white">S.n</th>
+              <th class="col-md-1 bg-secondary text-white">Ctn.no</th>
+              <th class="col-md-1 bg-secondary text-white">Item Name</th>
+              <th class="col-md-1 bg-secondary text-white">Qty</th>
+              <th class="col-md-1 bg-secondary text-white">Unit Price</th>
+              <th class="col-md-1 bg-secondary text-white">Val Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>1</td>
+              <td><input type="number" value=""></td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-    <div class="card mb-5">
-      <div class="card-header bg-danger text-white">Shipment Details</div>
-      <div class="card-body">
-        <div class="row mb-1">
-          <label class="col-sm-3 col-form-label">Transit Type</label>
-          <div class="col-sm-2">
-            <select class="form-select">
-              <option>AIR</option>
-            </select>
+
+    <div class="col-md-4 bg-warning rounded p-3">
+      <form>
+        <div class="row">
+          <div class="col-md-6 p-2">
+            <div class="row mt-2 p-1">
+              <label class="col-md-7">Carton No</label>
+              <input type="number" class="col-md-5 rounded">
+            </div>
+            <div class="row p-1">
+              <label class="col-md-7">Carton Weight</label>
+              <input type="number" class="col-md-5 rounded">
+            </div>
+            <div class="row p-1">
+              <label class="col-md-7">Remarks</label>
+              <input type="number" class="col-md-5 rounded">
+            </div>
+            <div class="mt-2 p-1">
+              <button class="btn btn-success col-md-5">Update</button>
+              <button class="btn btn-primary offset-md-1">Cancel</button>
+            </div>
+            <div class="row p-1">
+              <label class="col-md-7">Packed By</label>
+              <input type="number" class="col-md-5  mt-2 rounded">
+            </div>
+            <div class="row p-1">
+              <label class="col-md-7">Zone</label>
+              <input type="number" class="col-md-5 rounded">
+            </div>
+            <div class="row p-1">
+              <label class="col-md-7">Remarks</label>
+              <input type="number" class="col-md-5 rounded">
+            </div>
           </div>
-          <label class="col-sm-2 col-form-label">Service Type</label>
-          <div class="col-sm-2">
-            <input type="text" class="form-control" />
-          </div>
-        </div>
-  
-        <div class="row mb-3">
-          <label class="col-sm-3 col-form-label">To Country</label>
-          <div class="col-sm-2">
-            <select class="form-select">
-              <option>INDIA</option>
-            </select>
-          </div>
-          <label class="col-sm-2 col-form-label">Region</label>
-          <div class="col-sm-2">
-            <select class="form-select">
-              <option>SELECT</option>
-            </select>
+        <div class="col-md-6">
+          <div class="table-responsive">
+            <table class="table-bordered text-center text-white">
+              <thead>
+                <tr>
+                  <th class="col-md-1 bg-secondary text-white">Carton No</th>
+                  <th class="col-md-1 bg-secondary text-white">C.Weight</th>
+                  <th class="col-md-1 bg-secondary text-white">Action</th>
+                </tr>
+              </thead>
+            </table>
           </div>
         </div>
       </div>
+      </form>
     </div>
+
+    <div class="col-md-3 bg-info p-3 rounded">
+      <h6 class="col-md-6 bg-danger rounded text-center text-white">Amount Details</h6>
+      <form>
+        <div class="row mt-1">
+          <label class="col-md-5">Freight Charge</label>
+          <input type="number" value="0.00" class="col-md-6 rounded text-center text-success">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-5">Packing</label>
+          <input type="number" value="0.00" class="col-md-6 rounded text-center text-success">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-5">Bill Charge</label>
+          <input type="number" value="0.00" class="col-md-6 rounded text-center text-success">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-5">Extra</label>
+          <input type="number" value="0.00" class="col-md-6 rounded text-center text-success">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-5">Bill Amt</label>
+          <input type="number" value="0.00" class="col-md-6 rounded text-center text-success">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-5">Discount</label>
+          <input type="number" value="0.00" class="col-md-6 rounded text-center text-success">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-5">VAT</label>
+          <input type="number" class="col-md-6 rounded">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-5">Total Amt</label>
+          <input type="number" value="0.00" class="col-md-6 rounded text-center bg-danger">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-5">Received</label>
+          <input type="number" value="0.00" class="col-md-6 rounded text-center text-success">
+        </div>
+        <div class="row mt-1">
+          <label class="col-md-5">Balance</label>
+          <input type="number" value="0.00" class="col-md-6 rounded text-center text-danger">
+        </div>
+      </form>
+    </div>
+
   </div>
 </div>
