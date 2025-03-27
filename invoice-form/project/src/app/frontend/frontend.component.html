@@ -1,23 +1,42 @@
-<div class="container-fluid">
+<div class="container-fluid bg-light">
   <div class="row gap-3 p-1">
-    <div class="col-md-4 rounded p-3">
-      <h6 class="col-md-4  p-1 bg-danger rounded text-center text-white">Sender Details</h6>
+    <div class="col-md-4 mt-3 bg-white rounded p-3">
+      <div class="rounded text-white text-center px-3 py-1 d-inline-block position-absolute"
+            style="margin-top: -25px; margin-left: 10px; background-color: #ff6666;">Sender details
+      </div>
       <form>
-        <div class="row">
+        <div class="row mt-3">
           <label class="col-md-3">ID Type </label>
           <input type="number" class="col-md-3 rounded">
           <input type="number" class="col offset-md-1 rounded">
+          <span class="col-md-1 input-group-text bg-warning text-dark">
+            <!-- <i class="bi bi-search"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </span>
         </div>
         <div class="row mt-1">
           <label class="col-md-3">SenderName</label>
-          <input type="number" class="col-md-9 rounded">
+          <input type="number" class="col-md-8 rounded">
+          <span class=" col-md-1 input-group-text bg-warning text-dark">
+            <!-- <i class="bi bi-search"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </span>
         </div>
         <div class="row mt-1">
           <label class="col-md-3">Mobile1</label>
-          <input type="button" value="96" class="col-md-1  rounded text-center">
+          <input type="text" value="96" class="col-md-1 rounded">
           <input type="number" class="col-md-2 rounded">
-          <label class="col-md-3">WhatsApp</label>
-          <input type="button" value="96" class="col-md-1 rounded text-center">
+          <span class="col-md-1 input-group-text bg-warning text-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </span>
+          <label class="col-md-2">WhatsApp</label>
+          <input type="text" value="96" class="col-md-1 rounded text-center">
           <input type="number" class="col-md-2 rounded">
         </div>
         <div class="row mt-1">
@@ -26,36 +45,59 @@
         </div>
       </form>
 
-      <div class="col mt-2 rounded">
+      
+      <div class="col mt-2 bg-white rounded">
         <form>
-          <h6 class="col-md-4 p-1 bg-danger rounded text-center text-white">Shipment Details</h6>
+          <hr>
+          <div class="row mt-3">
+            <div class="col-md-4 rounded text-white text-center pe-2 d-flex position-absolute" style=" margin-left: 10px; background-color: #ff6666;margin-top: -25px ; width: 150px;">Shipment details</div>
+            <p class="col-md-4 d-flex position-absolute" style="margin-left: 230px; margin-top:-30px;color: rgb(44, 42, 42);">Invoice Date:</p>
+          </div>
           <div class="row mt-1">
             <label class="col-md-3">Transit Type</label>
-            <input type="number" class="col-md-3 rounded" value="AIR">
+            <input type="text" class="col-md-3 rounded text-center" value="AIR">
             <label class="col-md-3">ServiceType</label>
             <input type="number" class="col-md-3 rounded">
           </div>
           <div class="row mt-1">
             <label class="col-md-3">To Country</label>
-            <input type="number" class="col-md-3 rounded" value="INDIA">
+            <input type="text" class="col-md-3 rounded text-center" value="INDIA">
             <label class="col-md-3">Region</label>
-            <input type="number" class="col-md-3 rounded" value="SELECT">
+            <input type="text" class="col-md-3 rounded text-center" value="SELECT">
           </div>
         </form>
       </div>
       </div>
   
-    <div class="col-md-4 rounded mt-3">
+
+    <div class="col-md-4 bg-white rounded mt-3">
+      <div class="rounded text-white text-center px-3 py-1 d-inline-block position-absolute"
+            style="margin-top: -16px; margin-left: 10px; background-color: #ff6666;">Receiver details
+      </div>
+      <div class=" col-md-2 offset-md-2  text-white bg-success rounded text-center  py-1 d-inline-block position-absolute"
+              style="margin-top: -15px; margin-left: 220px;width:200px"> Sender based Receiver<span class="rounded-circle px-1" style=" background-color: #ff6666; max-width:25px ; ">0</span>
+      </div>
       <form>
-        <h6 class="col-md-4  p-1 bg-danger rounded text-center text-white">Sender Details</h6>
-        <div class="row mt-1">
+        <div class="row mt-4">
           <label class="col-md-3">ID Type </label>
           <input type="number" class="col-md-2 rounded">
           <input type="number" class="col offset-md-1 rounded">
+          <span class="col-md-1 input-group-text bg-warning text-dark">
+            <!-- <i class="bi bi-search"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </span>
         </div>
         <div class="row mt-1">
           <label class="col-md-3">ReceiverName</label>
           <input type="number" class="col rounded">
+          <span class="col-md-1 input-group-text bg-warning text-dark">
+            <!-- <i class="bi bi-search"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </span>
         </div>
         <div class="row mt-1">
           <label class="col-md-3">Address</label>
@@ -63,10 +105,15 @@
         </div>
         <div class="row mt-1">
           <label class="col-md-3">Mobile1</label>
-          <input type="button" value="+91" class="col-md-1 rounded">
+          <input type="text" value="+91" class="col-md-1 rounded">
           <input type="number" class="col-md-2 rounded">
-          <label class="col-md-3">Mobile2</label>
-          <input type="button" value="+91" class="col-md-1 rounded">
+          <span class="col-md-1 input-group-text bg-warning text-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </span>
+          <label class="col-md-2">Mobile2</label>
+          <input type="text" value="+91" class="col-md-1 rounded text-center">
           <input type="number" class="col-md-2 rounded">
         </div>
         <div class="row mt-1">
@@ -90,8 +137,11 @@
       </form>
     </div>
 
-    <div class="col-md-3 p-3 rounded">
-      <h6 class="col-md-6 p-1 bg-danger rounded text-center text-white">Shipment Details</h6>
+
+    <div class="col-md-3 mt-3 p-3 bg-white rounded">
+      <div class="rounded text-white text-center px-3 py-1 d-inline-block position-absolute"
+            style="margin-top: -32px; margin-left: 10px; background-color: #ff6666;">Shipment Details
+      </div>
       <form>
         <div class="row mt-1">
           <label class="col-md-4">Bill No</label>
@@ -119,9 +169,17 @@
       </form>
     </div>
 
-    <div class="col-md-4 rounded p-3">
-      <h6 class="col-md-3 p-1 bg-danger rounded text-center text-white ">Item Details</h6>
-      <div class="table-responsive col-md-12">
+
+    <div class="col-md-4 bg-white rounded p-3">
+      <div class="rounded text-white text-center px-3 py-1 d-inline-block position-absolute"
+      style="margin-top: -30px; margin-left: 10px; background-color: #ff6666;">Item Details
+      </div>
+      <div class="row">
+        <div class="col-md-4 offset-md-5">Total Items:<span class="rounded-circle px-1" style=" background-color: #ff6666; max-width:25px ; ">0</span></div>
+          <button class="col-md-1 rounded text-white" style="background-color: #ff6666;">-</button> <input class="col-md-1" style=" color: #ff6666;"type="text" value="1">
+          <button class="col-md-1 rounded text-white" style="background-color: #ff6666  ;">+</button>   
+      </div>
+      <div class="table-responsive col-md-12 p-1">
         <table class="table-bordered text-center text-white">
           <thead>
             <tr>
@@ -147,8 +205,11 @@
       </div>
     </div>
 
-    <div class="col-md-4 rounded p-3">
-      <h6 class="col-md-4 p-1 bg-danger rounded text-center text-white ">Carton Details</h6>
+
+    <div class="col-md-4 bg-white rounded p-3">
+      <div class="rounded text-white text-center px-3 py-1 d-inline-block position-absolute"
+      style="margin-top: -30px; margin-left: 10px; background-color: #ff6666;">Carton Details
+      </div>
       <form>
         <div class="row">
           <div class="col-md-6 p-2">
@@ -182,12 +243,11 @@
             </div>
           </div>
         <div class="col-md-6">
+          <div class="row gap-3">
+            <div class="col-md-5">TotalWeight:<span class="rounded-circle px-1" style=" background-color: #ff6666; max-width:25px ; ">0</span></div>
+            <div class="col-md-5">TotalCarton:<span class="rounded-circle px-1" style=" background-color: #ff6666; max-width:25px ; ">0</span></div>
+          </div>
            <div class="row">
-            <div class="col-md-12">
-              <label class="col-md-6">Total Weight:</label>
-              <label class="col-md-6">Total Carton:</label>
-              <!-- <h6 class="bg-danger col-md-1 text-white rounded offset-md-10 text-center">0</h6> -->
-            </div>
           </div>
           <div class="table-responsive">
             <table class="table-bordered text-center text-white">
@@ -205,10 +265,13 @@
       </form>
     </div>
 
-    <div class="col-md-3 rounded"id="last">
-      <h6 class="col-md-6 p-1 bg-danger rounded text-center text-white">Amount Details</h6>
+
+    <div class="col-md-3 rounded mt-1 "id="last">
+      <div class="rounded text-white text-center px-3 py-1 d-inline-block position-absolute"
+      style="margin-top: -18px; margin-left: 10px; background-color: #ff6666;">Amount Details
+      </div>
       <form>
-        <div class="row">
+        <div class="row mt-3">
           <label class="col-md-5">Freight Charge</label>
           <input type="number" value="0.00" class="col-md-6 rounded text-center text-success">
         </div>
